@@ -1,5 +1,6 @@
 from agenda import Agenda
 
+# Crear agenda
 agenda = Agenda()
 
 while True:
@@ -9,6 +10,7 @@ while True:
     print("4. Para crear una reunion de estudio")
     eleccion = int(input())
 
+    # Elecciones
     if eleccion == 1:
         agenda.mostrarEventos()
 

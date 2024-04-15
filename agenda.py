@@ -6,6 +6,7 @@ class Agenda:
         self.trabajos = []
         self.reuniones = []
 
+    # Añadir un examen
     def añadirExamen(self):
         nuevoEvento = Examen(
             float(input("Ingrese la fecha (dia.mes): ")),
@@ -16,6 +17,7 @@ class Agenda:
             )
         self.examenes.append(nuevoEvento)
 
+    # Añadir un trabajo
     def añadirTrabajo(self):
         nuevoEvento = TrabajoPractico(
             float(input("Ingrese la fecha de entrega (dia.mes): ")),
@@ -26,6 +28,7 @@ class Agenda:
             )
         self.trabajos.append(nuevoEvento)
 
+    # Añadir una reunion
     def añadirReunion(self):
         nuevoEvento = ReunionEstudio(
             float(input("Ingrese la fecha (dia.mes): ")),
@@ -36,8 +39,9 @@ class Agenda:
         )
         self.reuniones.append(nuevoEvento)
 
+    # Mostrar examenes
     def mostrarExamenes(self):
-        for examen in self.examenes:
+        for examen in self.examenes: # Por cada examen en la lista de examenes
 
             print(examen)
 
@@ -51,6 +55,7 @@ class Agenda:
 
             print(reunion)
 
+    # Mostrar todo
     def mostrarEventos(self):
         self.mostrarExamenes()
         self.mostrarTrabajos()
