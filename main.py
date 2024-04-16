@@ -8,6 +8,7 @@ while True:
     print("2. Para crear un examen")
     print("3. Para crear un trabajo practico")
     print("4. Para crear una reunion de estudio")
+    print("5. Para eliminar un evento mediante su descripcion")
     eleccion = int(input())
 
     # Elecciones
@@ -25,4 +26,6 @@ while True:
     elif eleccion == 4:
         agenda.mostrarReuniones()
         agenda.añadirReunion()
-    
+
+    elif eleccion == 5:
+        agenda.eliminarEvento(input("Ingrese el evento a eliminar (descripcion): "))
