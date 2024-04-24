@@ -29,3 +29,7 @@ while True:
 
     elif eleccion == 5:
         agenda.eliminarEvento(input("Ingrese el evento a eliminar (descripcion): "))
+
+    # Verificacion
+    else:
+        print("Opcion no valida")

@@ -29,5 +29,4 @@ Requerimientos No Funcionales:
 • Debe ser implementado en Python utilizando programación orientada a objetos.
 Entrega:
 • El código fuente del programa en archivos separados para cada clase.
-• Documentación que explique la estructura del programa, cómo se utilizan las clases y cualquier decisión de
-diseño importante.
+• Documentación que explique la estructura del programa, cómo se utilizan las clases y cualquier decisión de diseño importante.
